@@ -66,12 +66,16 @@ brew "libyaml"
 brew "lsusb"
 # Mac App Store command-line interface
 brew "mas"
+# Remote terminal application
+brew "mosh"
 # Library for a binary-based efficient data interchange format
 brew "msgpack"
 # 'traceroute' and 'ping' in a single tool
 brew "mtr", link: false
 # NCurses Disk Usage
 brew "ncdu"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
 # Port scanning utility for large networks
 brew "nmap"
 # Pinentry for GPG on Mac
