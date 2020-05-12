@@ -5,17 +5,22 @@ How I setup a new Mac. Adapted from [Carlos Alexandro Becker](https://github.com
 ## 1. Install brew
 
 ```sh
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+# This will install Command Line Tools if not already present
 ```
 
 ## 2. Install deps
 
 ```sh
-git clone https://github.com/emroch/mac.git
-cd mac
+git clone https://github.com/emroch/macOS.git ~/.macOS
+cd ~/.macOS
 # edit Brewfile to remove/add things
 brew bundle
 ```
+
+If installing apps from the Mac App Store, the installation will fail if not
+signed into an Apple ID in the store. Running `brew bundle` again after
+signing in will complete the installation.
 
 ## 3. Install dotfiles
 Managed dotfiles reside in [this repo](https://github.com/emroch/dotfiles).
@@ -27,10 +32,10 @@ cd ~/.dotfiles
 zsh
 ```
 
-Not so-sensible defaults:
+Reasonable defaults:
 
 ```console
-./macos/set-defaults
+./macos/set-defaults.sh
 ```
 
 ## 4. Setup SSH keys
