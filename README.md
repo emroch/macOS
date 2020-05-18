@@ -42,6 +42,9 @@ Reasonable defaults:
 
 Create a new SSH key or copy the previous one into `~/.ssh`. That should be
 it.
+```console
+ssh-keygen -t ed25519 -C "user@host"
+```
 
 Also fix perms:
 
@@ -54,7 +57,23 @@ $ chmod 0600 ~/.ssh/id_ed25519
 Create default config files:
 
 ```console
-gpg --list-keys
+$ gpg --list-keys
+```
+
+Create or copy a GPG key.
+```console
+$ # Create
+$ gpg --full-gen-key
+$ # or export/import
+$ gpg --export-secret-key -a > secretkey.asc  # on old host
+$ gpg --import secretkey.asc  # on new host
+```
+
+If copied, set trust level
+```console
+$ gpg --list-keys  # note key ID
+$ gpg --edit-keys <key ID>
+$ gpg> trust
 ```
 
 Setup pinentry:
