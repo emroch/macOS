@@ -73,7 +73,7 @@ If copied, set trust level
 ```console
 $ gpg --list-keys  # note key ID
 $ gpg --edit-keys <key ID>
-$ gpg> trust
+gpg> trust
 ```
 
 Setup pinentry:
