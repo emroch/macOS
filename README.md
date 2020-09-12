@@ -30,7 +30,19 @@ git clone https://github.com/emroch/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ./script/bootstrap
 zsh
+# optional - may be required to properly configure some features (like vim)
+dot_update
 ```
+
+Zsh may complain about directory permissions being incorrect. Simply run the
+following to correct it:
+```sh
+compaudit | xargs chmod g-w,o-w
+```
+
+It is also likely that the necessary fonts are not installed for the
+powerlevel10k theme. From iTerm2, run `p10k configure` and select "Yes/Y" to
+install the recommended font.
 
 Reasonable defaults:
 
