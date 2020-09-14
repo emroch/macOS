@@ -108,13 +108,12 @@ brew "caarlos0/tap/jsonfmt"
 # The fastest shell plugin manager
 brew "getantibody/tap/antibody"
 
-cask "1password"
-cask "alfred"
-#cask "appcleaner"
+cask "1password"  # more flexible than MAS version
+cask "alfred"  # MAS wildly out of date
 cask "atom"
 cask "bartender"
 cask "bettertouchtool"
-cask "daisydisk"
+cask "daisydisk"  # direct license
 cask "discord"
 # cask "docker"
 cask "firefox"
@@ -125,11 +124,11 @@ cask "google-chrome"
 cask "iina"
 # cask "inkscape"
 cask "intel-power-gadget"
-cask "istat-menus"
+cask "istat-menus"  # direct license
 cask "iterm2"
 cask "little-snitch"
 cask "logitech-options"
-#cask "plex"
+# cask "plex"
 cask "qlcolorcode"
 cask "qlimagesize"
 cask "qlmarkdown"
@@ -138,7 +137,6 @@ cask "qlstephen"
 cask "quicklook-csv"
 cask "quicklook-json"
 cask "rectangle"
-cask "slack"
 cask "spotify"
 cask "subtitles"
 cask "suspicious-package"
@@ -147,12 +145,14 @@ cask "transmission"
 # cask "visual-studio-code"
 cask "vlc"
 cask "webpquicklook"
-# cask "whatsapp"
 cask "wireshark"
 
-mas "GoodNotes 5", id: 1444383602
+mas "GoodNotes", id: 1444383602
+mas "Internet Access Policy Viewer", id: 1482630322
 mas "Messenger", id: 1480068668
-mas "pcalc", id: 403504866
-mas "Spark - Email App by Readdle", id: 1176895641
+mas "PCalc", id: 403504866
+mas "Slack", id: 803453959
+mas "Spark", id: 1176895641
 mas "Unclutter", id: 577085396
+# mas "WhatsApp", id: 1147396723
 mas "WireGuard", id: 1451685025

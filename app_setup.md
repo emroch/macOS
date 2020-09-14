@@ -98,9 +98,11 @@ of menu bar position, right to left):
 - iStat Menus combined: Always Show
 - Airport - Wifi: Always Show
 - Little Snitch Agent: Always Show
+- Volume: Always Show
 - Bluetooth: Always Show
 - Location Menu: Always Show
 - Airplay Displays: Show
+- Unclutter: Always Hide
 - 1Password: Hide
 - Google Drive: Hide
 - Rectangle: Hide
@@ -157,3 +159,11 @@ configure. Simply launch and log in. Paired devices should be picked up
 automatically. If the settings did not carry over, restore from a backup via the
 settings.
 
+### DaisyDisk
+
+Useful for examining disk usage. Registration key stored in 1Password.
+
+### Unclutter
+
+Files and Notes are stored in `Google Drive/Apps/Unclutter`. Be sure to select
+"Launch on Startup".
