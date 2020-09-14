@@ -44,13 +44,14 @@ It is also likely that the necessary fonts are not installed for the
 powerlevel10k theme. From iTerm2, run `p10k configure` and select "Yes/Y" to
 install the recommended font.
 
-Reasonable defaults:
+## 4. Reasonable defaults
+Configure some reasonable default settings using `defaults write` and `pmset`.
 
 ```console
-./macos/set-defaults.sh
+~/.macOS/set-defaults.sh
 ```
 
-## 4. Setup SSH keys
+## 5. Setup SSH keys
 
 Create a new SSH key or copy the previous one into `~/.ssh`. That should be
 it.
@@ -64,7 +65,7 @@ Also fix perms:
 $ chmod 0600 ~/.ssh/id_ed25519
 ```
 
-## 5. Setup GPG signing
+## 6. Setup GPG signing
 
 Create default config files:
 
@@ -120,12 +121,12 @@ $ git log --show-signature
 That's it!
 
 
-## 6. Reboot
+## 7. Reboot
 
 ```console
 sudo reboot
 ```
 
-## 7. Profit!
+## 8. Profit!
 
 :beers:
