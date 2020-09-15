@@ -147,6 +147,7 @@ cask "vlc"
 cask "webpquicklook"
 cask "wireshark"
 
+mas "AdGuard for Safari", id: 1440147259
 mas "GoodNotes", id: 1444383602
 mas "Internet Access Policy Viewer", id: 1482630322
 mas "Messenger", id: 1480068668
@@ -156,3 +157,12 @@ mas "Spark", id: 1176895641
 mas "Unclutter", id: 577085396
 # mas "WhatsApp", id: 1147396723
 mas "WireGuard", id: 1451685025
+
+# Microsoft Office Suite
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
+# iWork Suite
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541

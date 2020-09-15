@@ -103,8 +103,9 @@ of menu bar position, right to left):
 - Location Menu: Always Show
 - Airplay Displays: Show
 - Unclutter: Always Hide
-- 1Password: Hide
+- AdGuard for Safari: Hide
 - Google Drive: Hide
+- 1Password: Hide
 - Rectangle: Hide
 
 ### Little Snitch
@@ -167,3 +168,8 @@ Useful for examining disk usage. Registration key stored in 1Password.
 
 Files and Notes are stored in `Google Drive/Apps/Unclutter`. Be sure to select
 "Launch on Startup".
+
+### AdGuard for Safari
+
+Launch the app to prompt the extension install. Enable the extensions and
+desired content blockers. Be sure to enable "Launch at login".
