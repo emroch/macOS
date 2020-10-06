@@ -103,7 +103,7 @@ echo "  › Double click title bar to zoom"
 defaults write -g AppleActionOnDoubleClick -string "Maximize"
 
 echo "  › Don't minimize windows into application icon"
-defaults write com.apple.dock minimize-to-application -bool true
+defaults write com.apple.dock minimize-to-application -bool false
 
 echo "  › Don't animate opening applications from the Dock"
 defaults write com.apple.dock launchanim -bool false
