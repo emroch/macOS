@@ -88,6 +88,9 @@ defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextr
 echo "  › Show battery percent"
 defaults write com.apple.menuextra.battery ShowPercent -bool true
 
+echo "  › Disable helpviewer always on top"
+defaults write com.apple.helpviewer DevMode -bool True
+
 ###############################################################################
 echo ""
 echo "› Dock, Dashboard, Mission Control:"

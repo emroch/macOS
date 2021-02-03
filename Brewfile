@@ -81,6 +81,8 @@ brew "nmap"
 brew "pinentry-mac"
 # Show ps output as a tree
 brew "pstree"
+# Monitor data's progress through a pipe
+brew "pv"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Static analysis and lint tool, for (ba)sh scripts
@@ -117,8 +119,10 @@ cask "daisydisk"  # direct license
 cask "discord"
 # cask "docker"
 cask "firefox"
+cask "font-fontawesome"
 cask "font-hack"
 cask "font-jetbrains-mono"
+cask "font-source-code-pro"
 cask "google-backup-and-sync"
 cask "google-chrome"
 cask "iina"
@@ -138,12 +142,12 @@ cask "qlstephen"
 cask "quicklook-csv"
 cask "quicklook-json"
 cask "rectangle"
-cask "spotify"
+# cask "spotify"
 cask "subtitles"
 cask "suspicious-package"
 cask "transmission"
 # cask "viscosity"
-# cask "visual-studio-code"
+cask "visual-studio-code"
 cask "vlc"
 cask "webpquicklook"
 cask "wireshark"
@@ -158,6 +162,7 @@ mas "Spark", id: 1176895641
 mas "Unclutter", id: 577085396
 # mas "WhatsApp", id: 1147396723
 mas "WireGuard", id: 1451685025
+mas "Xcode", id: 497799835
 
 # Microsoft Office Suite
 mas "Microsoft Excel", id: 462058435
