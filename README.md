@@ -53,75 +53,32 @@ Configure some reasonable default settings using `defaults write` and `pmset`.
 
 ## 5. Setup SSH keys
 
-Create a new SSH key or copy the previous one into `~/.ssh`. That should be
-it.
+1Password now supports storing SSH keys, so managing shared keys is very easy.
+
+First, create a new SSH key to be the new Mac's identity. Name this key such that
+the hostname and key type are clear (ie host_ed25519).
 ```console
 ssh-keygen -t ed25519 -C "user@host"
 ```
 
-Also fix perms:
+Optionally, import the machine-specific key to 1Password. This will make it easy
+to add the public key to other hosts, but is not required.
 
-```console
-$ chmod 0600 ~/.ssh/id_ed25519
-```
+Also set up 1Password's SSH agent to provide access to the personal `id_25519`
+key. 
 
-## 6. Setup GPG signing
+1. [Turn on the 1Password SSH Agent](https://developer.1password.com/docs/ssh/get-started#step-3-turn-on-the-1password-ssh-agent)
+2. [Configure your SSH or Git client](https://developer.1password.com/docs/ssh/get-started#step-4-configure-your-ssh-or-git-client)
 
-Create default config files:
+## 6. Setup Git commit signing
 
-```console
-$ gpg --list-keys
-```
+1Password can also serve as a GPG signing agent using a particular SSH key.
 
-Create or copy a GPG key.
-```console
-$ # Create
-$ gpg --full-gen-key
-$ # or export/import
-$ gpg --export-secret-key -a > secretkey.asc  # on old host
-$ gpg --import secretkey.asc  # on new host
-```
-
-If copied, set trust level
-```console
-$ gpg --list-keys  # note key ID
-$ gpg --edit-keys <key ID>
-gpg> trust
-```
-
-Setup pinentry:
-
-```console
-$ brew install pinentry-mac  # handled by `brew bundle` in step 2
-$ echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
-$ killall gpg-agent
-```
-
-Setup git:
-
-```console
-$ export GPG_TTY=$(tty)
-$ git config --global gpg.program $(which gpg)
-$ git config --global user.signingkey C14AB940
-$ git config --global commit.gpgsign true
-```
-
-> Change C14AB940 with your key id.
-
-Test it:
-
-```console
-$ mkdir -p /tmp/test
-$ cd $_
-$ git init
-$ git commit --allow-empty -m 'signsss'
-$ git log --show-signature
-```
-
-That's it!
-
+[Configure Git commit signing with SSH](https://developer.1password.com/docs/ssh/git-commit-signing)
 
 ## 7. Reboot
+
+Some steps of this setup may require a reboot to take full effect.
 
 ```console
 sudo reboot
