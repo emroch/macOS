@@ -6,6 +6,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "romkatv/powerlevel10k"
 
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
@@ -19,6 +20,10 @@ brew "coreutils"
 brew "diff-so-fancy"
 # Convert text between DOS, UNIX, and Mac formats
 brew "dos2unix"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
 # Improved top (interactive process viewer)
 brew "htop"
 # Calculate various network masks, etc. from a given IP address
@@ -45,6 +50,8 @@ brew "tree"
 brew "watch"
 # Internet file retriever
 brew "wget"
+# A Zsh theme
+brew "romkatv/powerlevel10k/powerlevel10k"
 
 cask "1password"  # more flexible than MAS version
 cask "alfred"     # direct license, MAS wildly out of date
@@ -54,6 +61,7 @@ cask "firefox"
 cask "font-fontawesome"
 cask "font-hack"
 cask "font-jetbrains-mono"
+cask "font-meslo-lg-nerd-font"
 cask "font-source-code-pro"
 cask "google-chrome"
 cask "istat-menus"  # direct license
@@ -72,9 +80,11 @@ cask "visual-studio-code"
 cask "vlc"
 cask "wireshark"
 
+mas "1Password for Safari", id: 1569813296
 mas "Internet Access Policy Viewer", id: 1482630322
 mas "Notchmeister", id: 1599169747
 mas "PCalc", id: 403504866
+mas "Super Agent", id: 1568262835
 mas "Unclutter", id: 577085396
 mas "WireGuard", id: 1451685025
 

@@ -157,6 +157,18 @@ To fix vim, run `dot_update`, which should trigger the
 `$DOTFILES/vim/install.sh` script to install the plugins and configure neovim's
 preferences. If not, run the `install.sh` manually.
 
+### QLStephen
+
+This QuickLook generator allows previews of files without extensions, but it may
+have issues with macOS permissions on install. From the [project's README](https://github.com/whomwah/qlstephen#permissions-quarantine):
+
+1. run xattr -cr ~/Library/QuickLook/QLStephen.qlgenerator (sudo if needed)
+2. run qlmanage -r
+3. run qlmanage -r cache
+4. Restart Finder by...
+   - Restarting your computer
+   - or holding down the option key and right click on Finder’s dock icon, then select “Relaunch” from the menu
+
 ## Nice-to-Haves
 
 ### iStat Menus
